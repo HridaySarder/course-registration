@@ -1,15 +1,22 @@
 /* eslint-disable react/jsx-key */
 import { useState } from "react";
 import { useEffect } from "react";
+import Course from "../Course/Course";
 
 const Cart = () => {
   const [allCoures, setAllCourse] = useState([]);
+  const [selectedCourses, setSelectedCourses] = useState([])
   useEffect(() => {
     fetch("./course.json")
       .then((res) => res.json())
       .then((data) => setAllCourse(data));
   }, []);
-  console.log(allCoures);
+const handleSelectCourse = (course) =>{
+  setSelectedCourses([...selectedCourses,course])
+
+}
+
+  console.log(selectedCourses);
 
   return (
     <div className="flex gap-5">
@@ -23,20 +30,20 @@ const Cart = () => {
   <div className="card-body items-center text-center">
     <h2 className="card-title">{course.course_name}</h2>
     <p>{course.course_details}</p>
-    <div className="flex justify-around">
+    <div className="flex justify-between gap-5">
       <p>$ Price: {course.course_prize}</p>
       <p>Credit:{course.course_credit}hr</p>
     </div>
-    <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
-    </div>
+    
+      <button onClick={() => handleSelectCourse(course)} className="btn w-full rounded-lg text-white bg-[#2F80ED]">Select</button>
+    
   </div>
 </div>
           ))
         }
       </div>
       <div>
-        <h2 className="text-4xl">Course Name:</h2>
+        <Course selectedCourses={selectedCourses}></Course>
       </div>
     </div>
   );
