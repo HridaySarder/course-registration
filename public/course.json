@@ -5,7 +5,7 @@
     "course_name": "Introduction to Programming",
     "course_details": "Learn the fundamentals of programming with this introductory course.",
     "course_credit": 3,
-    "course_prize": "$199"
+    "course_prize": "199"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "course_name": "Web Development Bootcamp",
     "course_details": "Become a full-stack web developer in this intensive bootcamp.",
     "course_credit": 6,
-    "course_prize": "$499"
+    "course_prize": "499"
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "course_name": "Data Science Essentials",
     "course_details": "Master the essentials of data science and analytics.",
     "course_credit": 4,
-    "course_prize": "$299"
+    "course_prize": "299"
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "course_name": "Machine Learning Fundamentals",
     "course_details": "Explore the fundamentals of machine learning and AI.",
     "course_credit": 4,
-    "course_prize": "$349"
+    "course_prize": "349"
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "course_name": "Graphic Design Mastery",
     "course_details": "Unlock your creativity with this comprehensive graphic design course.",
     "course_credit": 3,
-    "course_prize": "$249"
+    "course_prize": "249"
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "course_name": "Digital Marketing Strategy",
     "course_details": "Learn effective digital marketing strategies to boost your business.",
     "course_credit": 2,
-    "course_prize": "$199"
+    "course_prize": "199"
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "course_name": "Cybersecurity Essentials",
     "course_details": "Protect your digital assets with essential cybersecurity skills.",
     "course_credit": 3,
-    "course_prize": "$299"
+    "course_prize": "299"
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "course_name": "Financial Planning and Analysis",
     "course_details": "Master financial planning and analysis techniques for business success.",
     "course_credit": 4,
-    "course_prize": "$349"
+    "course_prize": "349"
   },
   {
     "id": 9,
@@ -69,6 +69,6 @@
     "course_name": "Photography for Beginners",
     "course_details": "Capture stunning photos with this beginner's photography course.",
     "course_credit": 2,
-    "course_prize": "$199"
+    "course_prize": "199"
   }
 ]
