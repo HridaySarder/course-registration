@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const Cart = () => {
   const [allCoures, setAllCourse] = useState([]);
   const [selectedCourses, setSelectedCourses] = useState([]);
-  const [remaining,setRemaining] = useState(0)
+  const [remaining,setRemaining] = useState(20)
   const [totalCredit,setTotalCredit] = useState(0)
   useEffect(() => {
     fetch("./course.json")
@@ -19,7 +19,7 @@ const Cart = () => {
     const isExit = selectedCourses.find((item) => item.id == course.id);
     let count = course.course_credit;
     if (isExit) {
-      return toast("Already purchased");
+      return toast("Already selected");
     } else {
       selectedCourses.forEach((item) => {
         count = count + item.course_credit;

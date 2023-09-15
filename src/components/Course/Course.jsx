@@ -9,7 +9,7 @@ const Course = ({selectedCourses, remaining, totalCredit}) => {
       <h3 className="font-bold mb-4">Course Name:</h3>
       {
         selectedCourses.map((course) => (
-          <p>{course.course_name}</p>
+          <li type="1">{course.course_name}</li>
         )
         )
       }
