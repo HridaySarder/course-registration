@@ -41,7 +41,7 @@ const Cart = () => {
         {allCoures.map((course) => (
           <div className="card w-80 bg-base-100  shadow-xl">
             <figure className="px-10 pt-10">
-              <img src={course.course_img} alt="Shoes" className="rounded-xl" />
+              <img src={course.course_img} alt="Shoes" className="rounded-xl h-40" />
             </figure>
             <div className="card-body items-center text-center">
               <h2 className="card-title">{course.course_name}</h2>
